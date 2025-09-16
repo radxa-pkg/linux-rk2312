@@ -1,7 +1,9 @@
 # linux-rk2312
 
-[![Release](https://github.com/radxa-pkg/linux-rk2312/actions/workflows/release.yml/badge.svg)](https://github.com/radxa-pkg/linux-rk2312/actions/workflows/release.yml)
+[![Release](https://github.com/radxa-pkg/linux-rk2312/actions/workflows/release.yaml/badge.svg)](https://github.com/radxa-pkg/linux-rk2312/actions/workflows/release.yaml)
 
-Radxa Linux image for rk2312 release
+## Build
 
-Please refer to [`bsp`](https://github.com/radxa-repo/bsp/) for more info.
+1. `git clone --recurse-submodules https://github.com/radxa-pkg/linux-rk2312.git`
+2. Open in [`devcontainer`](https://code.visualstudio.com/docs/devcontainers/containers)
+3. `make deb`
