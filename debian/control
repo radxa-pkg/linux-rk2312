@@ -1,0 +1,84 @@
+Source: linux-rk2312
+Maintainer: "Radxa Computer Co., Ltd" <dev@radxa.com>
+Section: admin
+Priority: standard
+Standards-Version: 4.6.0
+Build-Depends: debhelper (>=12~),
+               devscripts,
+               lintian,
+               dh-exec,
+               flex,
+               bison,
+               bc,
+               libncurses-dev,
+               libssl-dev,
+               cpio,
+               kmod,
+               libyaml-dev,
+               rsync,
+               zstd,
+
+Package: linux-image-rk2312
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-image
+Depends: radxa-overlays-dkms,
+         linux-image-${binary:Version}-rk2312,
+         ${misc:Depends},
+Description: Radxa Linux meta-package for rk2312
+ This is the meta-package for Linux kernel.
+
+Package: linux-headers-rk2312
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-headers
+Depends: linux-headers-${binary:Version}-rk2312,
+         ${misc:Depends},
+Description: Radxa Linux headers meta-package for rk2312
+ This is the meta-package for Linux headers.
+
+Package: linux-libc-dev-rk2312
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-libc-dev
+Depends: linux-libc-dev-${binary:Version}-rk2312,
+         ${misc:Depends},
+Description: Radxa Linux libc-dev meta-package for rk2312
+ This is the meta-package for Linux libc-dev.
+
+Package: linux-image-radxa-rk3528
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-image,
+          linux-image-rock-2,
+Depends: radxa-overlays-dkms,
+         linux-image-${binary:Version}-rk2312,
+         ${misc:Depends},
+Description: Radxa Linux meta-package for Radxa RK3528 products
+ This is the meta-package for Linux kernel.
+
+Package: linux-headers-radxa-rk3528
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-headers,
+          linux-headers-rock-2,
+Depends: linux-headers-${binary:Version}-rk2312,
+         ${misc:Depends},
+Description: Radxa Linux headers meta-package for Radxa RK3528 products
+ This is the meta-package for Linux headers.
+
+Package: linux-libc-dev-radxa-rk3528
+Architecture: all
+Section: kernel
+Priority: optional
+Provides: linux-libc-dev,
+          linux-libc-dev-rock-2,
+Depends: linux-libc-dev-${binary:Version}-rk2312,
+         ${misc:Depends},
+Description: Radxa Linux libc-dev meta-package for Radxa RK3528 products
+ This is the meta-package for Linux libc-dev.
