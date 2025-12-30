@@ -1,3 +1,13 @@
+linux-rk2312 (6.1.43-26) unstable; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * fix: disable broken module
+
+  [ github-actions[bot] ]
+  * chore: update submodules
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 30 Dec 2025 10:40:59 +0000
+
 linux-rk2312 (6.1.43-25) unstable; urgency=medium
 
   [ Mitchell Ma ]
