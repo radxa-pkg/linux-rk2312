@@ -1,0 +1,12 @@
+{
+  "*": {
+    "Releases": [
+      "bullseye",
+      "bullseye-test",
+      "rk3528-bookworm",
+      "rk3528-bookworm-test",
+      "rk3528a-bookworm",
+      "rk3528a-bookworm-test"
+    ]
+  }
+}
